@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel Adventure</title>
+
+    <!-- font  family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mansalva&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- css files -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css files End  -->
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome link End -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;"><i
+            class="fa-solid fa-chevron-up"></i></button>
+
+    <!-- header section start -->
+    <header class="header-fied-top">
+        <div class="wrapper">
+            <nav class="navbar-fl">
+                <div class="adven-fl">
+                    <div class="fl-10-flex">
+                        <h2>Adventor.</h2>
+                    </div>
+                </div>
+
+                <div class="carts-fl-fl">
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping show-click" onclick="openpop()"></i>
+
+                        <div class="cart-count">
+                            <div class="cart-count-circl">
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mySidenav-nav" class="sidenav-fl">
+                        <a href="javascript:void(0)" class="closebtn-fl" onclick="closepop()">&times;</a>
+                        <div class="img-div">
+                            <div class="img-carts-emty">
+                                <img src="img/empty-cart.svg" alt="">
+                                <p>Cart is Empty</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="hidden-value">
+                    <span style="font-size:23px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+                </div>
+            </nav>
+        </div>
+
+        <div class="text-center-adventr-fl">
+            <div class="discover-fl">
+                <p>Discover the</p>
+            </div>
+            <div class="fl-heading">
+                <h1>Adventure Travel</h1>
+            </div>
+            <div class="pare-text">
+                <p>Your best Adventure Deals with nature </p>
+            </div>
+            <div class="cta-btn">
+                <div class="view-deta-btn">
+                    <button>View Adventures</button>
+                </div>
+            </div>
+        </div>
+        <div class="img-bg-wave">
+            <img src="img/mask.png" alt="">
+        </div>
+    </header>
+
+
+    <!-- header section End  -->
+
+
+    <!-- takes yourself -->
+
+    <div class="takes-wrapper">
+        <div class="text-self">
+            <div class="text-tittle">
+                <p>Take yourself</p>
+            </div>
+            <div class="text-tittle-heading">
+                <h2>Adventure Ideas</h2>
+            </div>
+        </div>
+
+        <div class="circle">
+            <div class="circle-path-images">
+                <div class="circle-img-fl">
+                    <img src="img/circle-img (1).jpg" alt="">
+                    <div class="text-0-content-imges">
+                        <div class="text-content-fl-flow">
+                            <span>Zip Lines</span>
+                        </div>
+                        <div class="pare-content-zip">
+                            <p>Add some adrenalin to yuor travel senses by zipline travel</p>
+                        </div>
+                        <div class="enqure-btn">
+                            <button>Enquire</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle-img-fl">
+                    <img src="img/circle-img (2).jpg" alt="">
+                    <div class="text-0-content-imges">
+                        <div class="text-content-fl-flow">
+                            <span>Kayaking</span>
+                        </div>
+                        <div class="pare-content-zip">
+                            <p>Add some adrenalin to yuor travel senses by zipline travel</p>
+                        </div>
+                        <div class="enqure-btn">
+                            <button id="Enquire-buttton">Enquire</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle-img-fl">
+                    <img src="img/circle-img (3).jpg" alt="">
+                    <div class="text-0-content-imges">
+                        <div class="text-content-fl-flow">
+                            <span>Bungee Jump</span>
+                        </div>
+                        <div class="pare-content-zip">
+                            <p>Add some adrenalin to yuor travel senses by zipline travel</p>
+                        </div>
+                        <div class="enqure-btn">
+                            <button>Enquire</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle-img-fl">
+                    <img src="img/circle-img (4).jpg" alt="">
+                    <div class="text-0-content-imges">
+                        <div class="text-content-fl-flow">
+                            <span>Canoeing</span>
+                        </div>
+                        <div class="pare-content-zip">
+                            <p>Add some adrenalin to yuor travel senses by zipline travel</p>
+                        </div>
+                        <div class="enqure-btn">
+                            <button>Enquire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- takes yourself -->
+
+
+    <!-- next  -->
+    <div class="bg-img-fl">
+
+        <div class="takes-wrapper">
+            <div class="takes-making-dfl">
+                <div class="takes-img-content-div-fl">
+                    <div class="takes-making">
+                        <h2>Making Adventure tours, activities affordable.</h2>
+                    </div>
+                    <div class="pare-text-text-fl">
+                        <p>Find an adventure, create a hobby that is related to nature in its vert pristiene shape for
+                            your goodness. Tempor incididunt ut labore. Et dolore magna aliqua. Quitts ipsum suspendisse
+                            ultrices gravida.</p>
+                    </div>
+                </div>
+                <div class="takes-img-content-div">
+                    <div class="img-fl-content-div">
+                        <div class="loop-data-img-coo">
+                            <div class="img-hover-data-before">
+                                <img src="img/circle-img (5).jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <!-- next End  -->
+
+
+    <!-- want em pack start  -->
+    <div class="takes-wrapper">
+        <div class="text-self">
+            <div class="text-tittle">
+                <p>Want em' Pack em'</p>
+            </div>
+            <div class="text-tittle-heading">
+                <h2>Adventure Essentials</h2>
+            </div>
+        </div>
+
+        <div class="gr-fl-group">
+            <div class="fl-times-fl-p">
+                <div class="im-essstilas">
+                    <img src="img/n6-removebg-preview.png" alt="">
+                    <div class="content-essingtional">
+                        <div class="p-types-div-essintional">
+                            <p>WALLACE</p>
+                        </div>
+                        <div class="p-types-div-essintional-h_ppp">
+                            <h3>Vintage Fedora Hat</h3>
+                        </div>
+                        <div class="price-p">
+                            <p>$249.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="im-essstilas">
+                    <img src="img/n7-removebg-preview.png" alt="">
+                    <div class="content-essingtional">
+                        <div class="p-types-div-essintional">
+                            <p>WALLACE</p>
+                        </div>
+                        <div class="p-types-div-essintional-h_ppp">
+                            <h3>Vintage Fedora Hat</h3>
+                        </div>
+                        <div class="price-p">
+                            <p>$249.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="im-essstilas">
+                    <img src="img/n8-removebg-preview.png" alt="">
+                    <div class="content-essingtional">
+                        <div class="p-types-div-essintional">
+                            <p>WALLACE</p>
+                        </div>
+                        <div class="p-types-div-essintional-h_ppp">
+                            <h3>Vintage Fedora Hat</h3>
+                        </div>
+                        <div class="price-p">
+                            <p>$249.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="im-essstilas">
+                    <img src="img/n6-removebg-preview.png" alt="">
+                    <div class="content-essingtional">
+                        <div class="p-types-div-essintional">
+                            <p>WALLACE</p>
+                        </div>
+                        <div class="p-types-div-essintional-h_ppp">
+                            <h3>Vintage Fedora Hat</h3>
+                        </div>
+                        <div class="price-p">
+                            <p>$249.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cta-btn-button">
+            <div class="cta-pl-fl">
+                <button>Browse Accessories</button>
+            </div>
+        </div>
+    </div>
+    <!-- want em pack end  -->
+
+
+
+    <div class="takes-wrapper">
+        <div class="text-self">
+            <div class="text-tittle">
+                <p>Select your activity</p>
+            </div>
+            <div class="text-tittle-heading">
+                <h2>Explore Activities</h2>
+            </div>
+        </div>
+
+        <div class="container swiper">
+            <div class="slide-container">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="border-dff">
+                            <div class="image-box">
+                                <img src="img/slide-img (6).jpg" alt="" />
+
+
+                            </div>
+
+
+
+                            <div class="tittle-box-fl-flow">
+                                <div class="tittle-box-heading">
+                                    <h3>Lee Thorn Jungle Safari</h3>
+                                    <div class="dl-fl-flex-data">
+                                        <div class="data-fl-flow">
+                                            <img src="img/slide-img (1).jpg" alt="">
+                                        </div>
+                                        <div class="data-fl-flow">
+                                            <p>Massai Mara, Kenya</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tittle-bottom-tages">
+                                    <p>Start From : $139.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="border-dff">
+                            <div class="image-box">
+                                <img src="img/slide-img (2).jpg" alt="" />
+
+                            </div>
+
+
+                            <div class="tittle-box-fl-flow">
+                                <div class="tittle-box-heading">
+                                    <h3>Lee Thorn Jungle Safari</h3>
+                                    <div class="dl-fl-flex-data">
+                                        <div class="data-fl-flow">
+                                            <img src="img/slide-img (2).jpg" alt="">
+                                        </div>
+                                        <div class="data-fl-flow">
+                                            <p>Massai Mara, Kenya</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tittle-bottom-tages">
+                                    <p>Start From : $139.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card swiper-slide">
+                        <div class="border-dff">
+                            <div class="image-box">
+                                <img src="img/slide-img (4).jpg" alt="" />
+
+                            </div>
+
+                            <div class="tittle-box-fl-flow">
+                                <div class="tittle-box-heading">
+                                    <h3>Lee Thorn Jungle Safari</h3>
+                                    <div class="dl-fl-flex-data">
+                                        <div class="data-fl-flow">
+                                            <img src="img/slide-img (3).jpg" alt="">
+                                        </div>
+                                        <div class="data-fl-flow">
+                                            <p>Massai Mara, Kenya</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tittle-bottom-tages">
+                                    <p>Start From : $139.00</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="border-dff">
+                            <div class="image-box">
+                                <img src="img/slide-img (5).jpg" alt="" />
+
+                            </div>
+
+
+                            <div class="tittle-box-fl-flow">
+                                <div class="tittle-box-heading">
+                                    <h3>Lee Thorn Jungle Safari</h3>
+                                    <div class="dl-fl-flex-data">
+                                        <div class="data-fl-flow">
+                                            <img src="img/slide-img (1).jpg" alt="">
+                                        </div>
+                                        <div class="data-fl-flow">
+                                            <p>Massai Mara, Kenya</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tittle-bottom-tages">
+                                    <p>Start From : $139.00</p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="py-0">
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- offers -->
+    <div class="bg-2-fl-imges">
+        <div class="takes-wrapper fl-po-times">
+            <div class="offer-content-tiiltles">
+
+            </div>
+            <div class="tittles-div-for-fl-loop-data">
+                <div class="data-defer-fl">
+                    <p>Value before business</p>
+                </div>
+                <div class="offer-heading">
+                    <h2>We Offer the best</h2>
+                </div>
+            </div>
+
+
+            <div class="fl-flex-flot-fl-opp">
+
+
+                <div class="fl-various">
+
+                    <div class="t-p-full-pl">
+                        <div class="boat-fl-natures">
+                            <img src="img/rowing.png" alt="">
+                        </div>
+                        <div class="boat-fl-natures">
+                            <span>Various Adventures</span>
+                            <p>Tempor incididunt ut labore. Lore magna aliua sem utna</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl-various">
+                    <div class="t-p-full-pl">
+                        <div class="boat-fl-natures">
+                            <img src="img/map.png" alt="">
+                        </div>
+                        <div class="boat-fl-natures">
+                            <span> Adventures Trails</span>
+                            <p>Tempor incididunt ut labore. Lore magna aliua sem utna</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="fl-flex-flot-fl-opp">
+                <div class="fl-various">
+                    <div class="t-p-full-pl">
+                        <div class="boat-fl-natures">
+                            <img src="img/trainer.png" alt="">
+                        </div>
+                        <div class="boat-fl-natures">
+                            <span>Trainer Guide</span>
+                            <p>Tempor incididunt ut labore. Lore magna aliua sem utna</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl-various">
+                    <div class="t-p-full-pl">
+                        <div class="boat-fl-natures">
+                            <img src="img/business-travel.png" alt="">
+                        </div>
+                        <div class="boat-fl-natures">
+                            <span> famaily Trips</span>
+                            <p>Tempor incididunt ut labore. Lore magna aliua sem utna</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="fl-flex-flot-fl-opp">
+                <div class="fl-various">
+                    <div class="t-p-full-pl">
+                        <div class="boat-fl-natures">
+                            <img src="img/boots.png" alt="">
+                        </div>
+                        <div class="boat-fl-natures">
+                            <span>Trainer Guide</span>
+                            <p>Tempor incididunt ut labore. Lore magna aliua sem utna</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl-various">
+                    <div class="t-p-full-pl">
+                        <div class="boat-fl-natures">
+                            <img src="img/teddy-bear.png" alt="">
+                        </div>
+                        <div class="boat-fl-natures">
+                            <span>Complete Guidance</span>
+                            <p>Tempor incididunt ut labore. Lore magna aliua sem utna</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <!-- offers end  -->
+
+    <!-- https://adventor.wpengine.com/wp-content/themes/adventor/assets/images/home-mask-shape.png -->
+
+    <!-- footprints -->
+    <div class="bg-3-img">
+
+
+        <div class="takes-wrapper">
+            <div class="foot-prints-heading">
+
+                <div class="heading-tiitle-div">
+                    <div class="n-pl-fl-fl">
+                        <p>Delicious near you</p>
+                    </div>
+                    <div class="n-pl-fl">
+                        <h2>Our Footprints</h2>
+                    </div>
+                    <div class="pare-text-ap-fl">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quibusdam excepturi
+                            laudantium voluptas consequuntur officia labore autem, ea impedit quaerat.</p>
+                    </div>
+                </div>
+
+                <div class="test-clients-div">
+                    <div class="circle-div-loop-fl">
+                        <div class="fl-client">
+                            <h3>23+</h3>
+                            <p>Cities</p>
+                        </div>
+                        <div class="fl-client">
+                            <h3>7</h3>
+                            <p>Countries</p>
+                        </div>
+                        <div class="fl-client">
+                            <h3>250+</h3>
+                            <p>Outlets</p>
+                        </div>
+                    </div>
+                    <div class="p-text-area-div">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="name-fl-div">
+                        <p>-Anais Nin</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- footprints End  -->
+
+
+    <!-- testimonilas  -->
+    <div class="text-self">
+        <div class="text-tittle">
+            <p>Client Testimonial
+            </p>
+        </div>
+        <div class="text-tittle-heading">
+            <h2>Adventure Talks
+            </h2>
+        </div>
+    </div>
+    <div class="f-wrapper">
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="https://adventor.wpengine.com/wp-content/uploads/2021/07/home-testi-001.jpg" alt=""
+                        class="image" />
+                    <p>
+                        Tempor incididunt ut labore. Et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                        Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Vera Ferminga</span>
+                        <span class="job">Adventure Journalist</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="https://adventor.wpengine.com/wp-content/uploads/2021/07/home-testi-001.jpg" alt=""
+                        class="image" />
+                    <p>
+                        Tempor incididunt ut labore. Et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                        Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Vera Ferminga</span>
+                        <span class="job">Adventure Journalist</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="https://adventor.wpengine.com/wp-content/uploads/2021/07/home-testi-001.jpg" alt=""
+                        class="image" />
+                    <p>
+                        Tempor incididunt ut labore. Et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                        Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Vera Ferminga</span>
+                        <span class="job">Adventure Journalist</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn">
+
+            </div>
+            <div class="swiper-button-prev nav-btn"></div>
+
+        </div>
+
+    </div>
+
+    <!-- testimonilas End  -->
+
+
+    <!-- insta feeds -->
+
+
+    <div class="insta-bg">
+
+        <div class="takes-wrapper">
+            <div class="insta-icon">
+                <div class="insta-gram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <div class="insta-gram">
+                    <p>#Ventura</p>
+                </div>
+            </div>
+
+            <div class="insta-feedd-fl">
+                <div class="fl-insta-flex">
+                    <div class="insta-imges">
+                        <img src="img/insta (6).jpg" alt="">
+                    </div>
+                    <div class="insta-imges">
+                        <img src="img/insta (7).jpg" alt="">
+                    </div>
+                    <div class="insta-imges">
+                        <img src="img/insta (8).jpg" alt="">
+                    </div>
+                    <div class="insta-imges">
+                        <img src="img/insta (9).jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- clients -->
+    <div class="footer-bg">
+
+
+        <div class="takes-wrapper">
+
+            <div class="insta-feedd-fl">
+                <div class="fl-insta-flex-fl">
+                    <div class="insta-imges">
+                        <img src="img/client-logo-1.png" alt="">
+                    </div>
+                    <div class="insta-imges">
+                        <img src="img/client-logo-2.png" alt="">
+
+                    </div>
+                    <div class="insta-imges">
+                        <img src="img/client-logo-3.png" alt="">
+                    </div>
+                    <div class="insta-imges">
+                        <img src="img/client-logo-4.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- clients End  -->
+
+
+        <!-- news letter  -->
+
+
+        <div class="f-wrapper">
+            <div class="news-letter">
+                <div class="sunscribe">
+                    <div class="p-sub-tttle">
+                        <p>Subscribe now</p>
+                    </div>
+                    <div class="p-sub-tttle-heading-tiitle">
+                        <h2>Get the Latest News</h2>
+                    </div>
+
+
+                </div>
+
+                <div class="form-data">
+                    <form action="#">
+                        <div class="detales-data">
+                            <input type="text" name="" id="" placeholder="Enter Email">
+                            <div class="img-email-sent">
+                                <button> <img src="img/sent.png" alt=""></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- news letter End   -->
+
+
+        <!-- Fooetr  -->
+
+        <div class="takes-wrapper">
+            <footer class="container-footer">
+                <div class="footer-tittle">
+                    <div class="tittle-advcentor">
+                        <h3>Adventor</h3>
+                    </div>
+                    <div class="p-times-pare-footer">
+                        <p>Going on an adventure is not about just fun, its all about yourself and entertaining
+                            yourself. Get the best out adventure activities in you and start living the moment.
+                        </p>
+                    </div>
+                    <div class="links">
+                        <div class="links-brands">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="links-brands">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="links-brands">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="links-brands">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="link-2-list">
+                    <div class="tittle-heading">
+                        <h3>useful Links</h3>
+                    </div>
+
+                    <div class="items-d-flex">
+                        <ul class="list-items-fl-flrx">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="">Adventures</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="link-2-list">
+                    <div class="tittle-heading">
+                        <h3>Support Links</h3>
+                    </div>
+
+                    <div class="items-d-flex">
+                        <ul class="list-items-fl-flrx">
+                            <li><a href="">Ask a Question</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="link-2-list">
+                    <div class="tittle-heading">
+                        <h3>Newsletter Subscription</h3>
+                    </div>
+
+                    <div class="items-d-flex">
+                        <div class="detalies-contact-info">
+                            <div class="detales-info-fl">
+                                <div class="e-footer-fl">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="e-footer-fl">
+                                    <p>1234 streat Fl 336025</p>
+                                </div>
+                            </div>
+                            <div class="detales-info-fl">
+                                <div class="e-footer-fl">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="e-footer-fl">
+                                    <p>demo@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="detales-info-fl">
+                                <div class="e-footer-fl">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="e-footer-fl">
+                                    <p>+91 8565859620</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </footer>
+
+            <div class="copy-write-text">
+                <div class="copy-content">
+                    <p>© 2024 All right Reserved</p>
+                </div>
+                <div class="copy-content">
+                    <div class="fl-copy-write-text-content-links">
+                        <div class="copy-links">
+                            <ul class="list-links-copy">
+                                <li><a href="">Help</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fooetr End   -->
+
+
+
+
+
+    </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+  <script>
+     var swiper = new Swiper(".slide-container", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            sliderPerGroup: 3,
+            loop: true,
+            centerSlide: "true",
+            fade: "true",
+            grabCursor: "true",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                800: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        let nav = document.querySelector("nav");
+        window.addEventListener("scroll", function () {
+            nav.classList.toggle("actived", window.scrollY > 0)
+        })
+
+
+  </script>
+
+ 
+
+</body>
+
+</html>
